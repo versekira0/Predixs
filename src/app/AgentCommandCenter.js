@@ -267,7 +267,7 @@ export default function AgentCommandCenter() {
         method: "POST",
         headers: { "Content-Type": "application/json", "Authorization": `Bearer ${groqKey}` },
         body: JSON.stringify({
-          model: "llama3-70b-8192",
+          llama-3.3-70b-versatile
           messages: [
             { role: "system", content: buildSystemPrompt(creds, owner) },
             { role: "user", content: userMsg }
